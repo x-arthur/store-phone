@@ -1,0 +1,202 @@
+@use "./assets/sass/reset";
+@use "./assets/sass/font";
+@use"./assets/sass/cor";
+
+html {
+  // width: 100vw;
+  height: 100vh;
+
+  body {
+    background: cor.$roxo-escuro;
+    display: grid;
+    grid-template-rows: 96px auto auto 80px;
+    color: cor.$branco;
+
+    header {
+      background-color: palegoldenrod;
+      background-color: cor.$roxo-02;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      // background-color: palegreen;
+      padding: 1rem;
+      margin: auto;
+      max-width: 768px;
+
+      #bemVindo {
+        margin: 1rem 0;
+
+        h1 {
+          @include font.principal;
+          text-indent: 16px;
+          margin-top: 8px;
+
+          // text-align: center;
+          span {
+            color: cor.$roxo-01;
+          }
+        }
+
+        p {
+          @include font.normal;
+          line-height: calc(1rem + 8px);
+          max-width: 768px;
+          text-indent: 16px;
+        }
+      }
+
+      #oferta {
+        margin: 1.5rem 0 1rem;
+
+        h2 {
+          @include font.destaque;
+          margin-bottom: 24px;
+        }
+
+        #container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .card {
+            background-color: cor.$branco;
+            width: 232px;
+            height: 368px;
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            margin: 24px 0;
+
+            img {
+              margin: 24px 24px 16px;
+              height: 208px;
+              width: 184px;
+              border-radius: .3rem;
+            }
+
+            .info {
+              margin: 0 auto;
+
+              color: cor.$preto-01;
+
+              h3 {
+                @include font.informativa;
+                font-weight: 600
+              }
+
+              p {
+                @include font.normal;
+
+                
+              }
+
+            }
+
+            p {
+              color: cor.$preto-01;
+              font-size: 14px;
+              margin: 3px 0 0 16px;
+              font-weight: bold;
+            }
+
+            h4 {
+              font-size: 24px;
+              color: cor.$roxo-01;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: paleturquoise;
+      background-color: cor.$roxo-02;
+
+      #footerLogo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 425px;
+        margin: .5rem auto;
+
+        #contato {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            margin-bottom: .5rem;
+            color: cor.$branco-gelo;
+
+          }
+        }
+      }
+
+      #horario,
+      #direito,
+      #desenvolvido {
+        padding: .5rem 0;
+        text-align: center;
+      }
+
+      #horario {
+        p {
+          margin-bottom: .3rem;
+        }
+      }
+
+      #localizacao {
+        padding: .5rem 0 .8rem 1rem;
+        margin: 0 auto;
+        max-width: 425px;
+
+
+      }
+
+      #direito {
+        background-color: cor.$roxo-01;
+      }
+
+      #desenvolvido {
+        background-color: cor.$preto-01;
+      }
+    }
+
+    nav {
+      background-color: palevioletred;
+      background-color: cor.$roxo-01;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+
+      ul {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        gap: 12px;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: cor.$branco;
+
+          i {
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+          }
+
+
+        }
+      }
+    }
+  }
+
+}

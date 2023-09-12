@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300,400;500;600;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.05rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html {
+  height: 100vh;
+}
+html body {
+  background: #241B35;
+  display: grid;
+  grid-template-rows: 96px auto auto 80px;
+  color: #f4f4f4;
+}
+html body header {
+  background-color: palegoldenrod;
+  background-color: #4D425F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body main {
+  padding: 1rem;
+  margin: auto;
+  max-width: 768px;
+}
+html body main #bemVindo {
+  margin: 1rem 0;
+}
+html body main #bemVindo h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-indent: 16px;
+  margin-top: 8px;
+}
+html body main #bemVindo h1 span {
+  color: #6C35DE;
+}
+html body main #bemVindo p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: calc(1rem + 8px);
+  max-width: 768px;
+  text-indent: 16px;
+}
+html body main #oferta {
+  margin: 1.5rem 0 1rem;
+}
+html body main #oferta h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+html body main #oferta #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main #oferta #container .card {
+  background-color: #f4f4f4;
+  width: 232px;
+  height: 368px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+html body main #oferta #container .card img {
+  margin: 24px 24px 16px;
+  height: 208px;
+  width: 184px;
+  border-radius: 0.3rem;
+}
+html body main #oferta #container .card .info {
+  margin: 0 auto;
+  color: #373737;
+}
+html body main #oferta #container .card .info h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-weight: 600;
+}
+html body main #oferta #container .card .info p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+html body main #oferta #container .card p {
+  color: #373737;
+  font-size: 14px;
+  margin: 3px 0 0 16px;
+  font-weight: bold;
+}
+html body main #oferta #container .card h4 {
+  font-size: 24px;
+  color: #6C35DE;
+  text-align: center;
+}
+html body footer {
+  background-color: paleturquoise;
+  background-color: #4D425F;
+}
+html body footer #footerLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 425px;
+  margin: 0.5rem auto;
+}
+html body footer #footerLogo #contato {
+  display: flex;
+  flex-direction: column;
+}
+html body footer #footerLogo #contato a {
+  margin-bottom: 0.5rem;
+  color: #f1f1f1;
+}
+html body footer #horario,
+html body footer #direito,
+html body footer #desenvolvido {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+html body footer #horario p {
+  margin-bottom: 0.3rem;
+}
+html body footer #localizacao {
+  padding: 0.5rem 0 0.8rem 1rem;
+  margin: 0 auto;
+  max-width: 425px;
+}
+html body footer #direito {
+  background-color: #6C35DE;
+}
+html body footer #desenvolvido {
+  background-color: #373737;
+}
+html body nav {
+  background-color: palevioletred;
+  background-color: #6C35DE;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+html body nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 12px;
+}
+html body nav ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4f4f4;
+}
+html body nav ul a i {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
