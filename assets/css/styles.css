@@ -150,6 +150,10 @@ html body footer #direito {
 html body footer #desenvolvido {
   background-color: #373737;
 }
+html body footer #desenvolvido a {
+  color: #f4f4f4;
+  text-decoration: underline;
+}
 html body nav {
   background-color: palevioletred;
   background-color: #6C35DE;

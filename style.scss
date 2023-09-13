@@ -121,7 +121,6 @@ html {
     footer {
       background-color: paleturquoise;
       background-color: cor.$roxo-02;
-
       #footerLogo {
         display: flex;
         justify-content: space-around;
@@ -140,14 +139,12 @@ html {
           }
         }
       }
-
       #horario,
       #direito,
       #desenvolvido {
         padding: .5rem 0;
         text-align: center;
       }
-
       #horario {
         p {
           margin-bottom: .3rem;
@@ -168,7 +165,12 @@ html {
 
       #desenvolvido {
         background-color: cor.$preto-01;
+        a{
+          color: cor.$branco;
+          text-decoration: underline;
+        }
       }
+
     }
 
     nav {
