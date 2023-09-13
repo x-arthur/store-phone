@@ -3,7 +3,7 @@
 @use"./assets/sass/cor";
 
 html {
-  // width: 100vw;
+  width: 100vw;
   height: 100vh;
 
   body {
@@ -24,7 +24,8 @@ html {
       // background-color: palegreen;
       padding: 1rem;
       margin: auto;
-      max-width: 768px;
+      // max-width: 768px;
+      max-width: 1024px;
 
       #bemVindo {
         margin: 1rem 0;
@@ -50,6 +51,7 @@ html {
 
       #oferta {
         margin: 1.5rem 0 1rem;
+        // margin: auto;
 
         h2 {
           @include font.destaque;
@@ -57,9 +59,13 @@ html {
         }
 
         #container {
-          display: flex;
+          display: grid;
+          grid-template-columns: auto;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
+          gap: 16px;
+          margin: 0 auto;
 
           .card {
             background-color: cor.$branco;
@@ -68,7 +74,7 @@ html {
             border-radius: .5rem;
             display: flex;
             flex-direction: column;
-            margin: 24px 0;
+            // margin: 16px 0;
 
             img {
               margin: 24px 24px 16px;
@@ -90,7 +96,7 @@ html {
               p {
                 @include font.normal;
 
-                
+
               }
 
             }
@@ -199,4 +205,29 @@ html {
     }
   }
 
+}
+
+@media only screen and (min-width: 768px) {
+  #container {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: auto auto auto;
+    gap: 16px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #container {
+    display: grid;
+    grid-template-columns: auto auto auto!important;
+    grid-template-rows: auto auto auto;
+    gap: 16px !important;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #container {
+    display: grid;
+    grid-template-columns: auto auto auto auto!important;
+    grid-template-rows: auto auto auto;
+    gap: 16px !important;
+  }
 }
