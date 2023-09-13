@@ -202,5 +202,51 @@ html body nav ul a i {
     gap: 16px !important;
   }
 }
+main #simulador {
+  max-width: 568px;
+}
+main #simulador h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 24px auto 40px;
+}
+main #simulador .grupo {
+  margin: 18px auto;
+}
+main #simulador .grupo label {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  margin: 4px auto;
+}
+main #simulador .grupo input[type=number] {
+  min-height: 32px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+main #simulador .grupo button {
+  display: block;
+  min-height: 40px;
+  width: 164px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #6C35DE;
+}
+main #simulador #valores {
+  margin: 24px auto 144px;
+}
+main #simulador #valores #container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main #simulador #valores #container div ul {
+  list-style: none;
+}
+main #simulador #valores #container div ul li:first-child {
+  display: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
